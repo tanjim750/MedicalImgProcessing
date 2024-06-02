@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta id="viewport" name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="fb:admins" content="506766675" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+    <title>Medical Image Processing</title>
+    <meta name="next-head-count" content="12" />
+    <link rel="preload" href="{% static 'css/419698f391b42009.css' %}" as="style" />
+    <link rel="stylesheet" href="{% static 'css/419698f391b42009.css' %}" data-n-g="" />
+    <link rel="preload" href="{% static 'css/cdf075c1c20e471a.css' %}" as="style" />
+    <link rel="stylesheet" href="{% static 'css/cdf075c1c20e471a.css' %}" data-n-p="" />
+    <link rel="preload" href="{% static 'css/d6ad0685278e1bf4.css' %}" as="style" />
+    <link rel="stylesheet" href="{% static 'css/d6ad0685278e1bf4.css' %}" data-n-p="" />
+    <link rel="preload" href="{% static 'css/27e75b6a43bfc75e.css' %}" as="style" />
+    <link rel="stylesheet" href="{% static 'css/27e75b6a43bfc75e.css' %}" data-n-p="" /><noscript data-n-css=""></noscript>
+    
+</head>
+
+<body style="margin:0">
+    <div id="__next">
+        
+        <div id="page" class="page_main__ureoL web new">
+            <nav class="nav_nav__RT8mp"><a class="logo_logo__TxG5d" href="/">
+                <img src="{% static 'images/logo.png' %}" alt="Diffchecker logo" class="logo_logoImage___hgf9"/><span class="logo_logoText__bQ6qQ"><span>Img</span>Processing</span></a>
+                
+            </nav>
+            <div class="main content noHeader noFooter page_content__Weq2t">
+                <div class="image-compare_imageDiffContainer__HjohO">
+                    <div class="hero_hero__gBt_j">
+                        <div class="hero_mainContainer__9OESZ" data-process_type="eye-fundus" onclick="manageImgProcessType(this)" style="cursor: pointer;">
+                            <div class="hero_main__N10_M">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="icon_large__HZc7K" viewBox="0 0 16 16" preserveAspectRatio="none"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1" opacity="0.4"></path><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 11v-1l1-1 1 1 3-3 3 3v1z"></path><circle cx="5.5" cy="6.5" r="0.5" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                </svg>
+                                <div
+                                    class="hero_mainContent__LzYjA" >
+                                    <h2>Eye Fundus</h2>
+                                    <p>The eye fundus image is mainly analyzed for those patients who have diabetes. As we are not concerned
+                                        about the details of the diabetes process our task is very simple. We just need to extract blood vessels
+                                        from the image. The following illustration is a piece of insight information about our task.</p>
+                                </div>
+                            </div>
+                            <div class="process-type-active-bar" style="width: 100%;height: 5px; background-color: rgb(162, 162, 225); border-radius: 2px;"></div>
+                        </div>
+                    
+                        <div class="hero_mainContainer__9OESZ" data-process_type="melanoma" onclick="manageImgProcessType(this)" style="cursor: pointer;">
+                            <div class="hero_main__N10_M"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="icon_large__HZc7K" viewBox="0 0 16 16" preserveAspectRatio="none"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1" opacity="0.4"></path><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 11v-1l1-1 1 1 3-3 3 3v1z"></path><circle cx="5.5" cy="6.5" r="0.5" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle></svg>
+                                <div
+                                    class="hero_mainContent__LzYjA">
+                                    <h2>Melanoma</h2>
+                                    <p>Melanoma image is mainly analyzed for those patients who have skin cancer. At
+                                        present, most AI-driven software has such kind of capability to detect whether it is a skin cancer or
+                                        common navi. So our task is to extract lesions from the image. The following illustration is a piece of
+                                        insight information about our task.</p>
+                                </div>
+                            </div>
+                            <div class="process-type-active-bar" style="display: none; width: 100%;height: 5px; background-color: rgb(162, 162, 225); border-radius: 2px;"></div>
+                        </div>
+                </div>
+                
+                <div class="image-diff-checker_imageDiffChecker__imX1M image-diff-checker_dropzone__5YtQx">
+                    <div class="image-diff-checker_uploadContainer__EEsBC">
+                        <div class="image-diff-checker_uploadContent__XwNob">
+                            <div class="diff-upload-drop-container_container__H2791" >
+                                <div class="diff-upload-dropzone_dropzone__JRJeg" role="presentation" tabindex="0">
+                                    <!-- submit form  -->
+                                    <form id="data-form" action="{% url 'home' %}" method="post" enctype="multipart/form-data">
+                                        {% csrf_token %}
+                                        <input id="source-image" name="source-image" type="file" style="display:none"/>
+                                        <input type="hidden" name="process-type" value="eye-fundus">
+                                    </form>
+
+                                    
+                                    <label for="source-image" class="diff-upload-dropzone_content__SLabA">
+                                        <div class="dropzone-input-instruction_inputInstruction__O901k">
+                                            
+                                            <img id="display-source-image" alt="" style="display: none; height: auto; width: auto; max-width: 700px; max-height: 500px;" >
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="icon_xl__eh4ch" viewBox="0 0 16 16" preserveAspectRatio="none"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1" opacity="0.4"></path><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 11v-1l1-1 1 1 3-3 3 3v1z"></path><circle cx="5.5" cy="6.5" r="0.5" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle></svg>
+                                                <div>
+                                                    <div class="dropzone-input-instruction_instruction____yl0 browse-label">Click to browse</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-diff-checker_uploadContent__XwNob">
+                            <div class="diff-upload-drop-container_container__H2791">
+                                <div class="diff-upload-dropzone_dropzone__JRJeg" role="presentation" tabindex="0">
+                                    <div class="diff-upload-dropzone_content__SLabA">
+                                        
+                                        <div class="dropzone-input-instruction_inputInstruction__O901k">
+                                            <div class="loader" style="display: none;">
+                                                <img src="{% static 'images/loader.gif' %}" alt="" height="300px" width="400px">
+                                                <br>
+                                                <strong>Processing...</strong><br>
+                                                <span>Please wait a second</span>
+                                            </div>
+                                            <img id="display-output-image" src="" alt="" style="display: none; height: auto; width: auto; max-width: 700px; max-height: 500px;" >
+                                            <div class="empty-output-box" >
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" class="icon_xl__eh4ch" viewBox="0 0 16 16" preserveAspectRatio="none"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1" opacity="0.4"></path><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 11v-1l1-1 1 1 3-3 3 3v1z"></path><circle cx="5.5" cy="6.5" r="0.5" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle></svg>
+                                                <div class="output-label">Output Image will display here</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <footer class="hide-print footer_footer__eC0i7">
+            <div class="divider_horizontal__Lcihu footer_divider__fSYZY"></div>
+            <div class="footer_content__QkTOH">
+                <ul class="footer_links__LH0x5">
+                    <li>
+                        <button id="process-btn" class="nav_hideDownloadDesktop__pq0_K button_button__bjA22 button_primary__rOLXs button_green__M6qy2 button_default__8ts32 button_basic__UWiCh" >
+                            <span class="button_textContent__h9hLW" style="font-size: 20px;">Start Image Processing</span>
+                        </button>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </footer>
+    </div>
+    </div>
+    
+    <script>
+        let form = document.querySelector('form#data-form');
+        let btn = document.querySelector('button#process-btn');
+        let loader = document.querySelector('div.loader');
+        let displayOpImg = document.querySelector('img#display-output-image');
+        let emptyOpBox = document.querySelector('div.empty-output-box');
+        let processTypeInput = document.querySelector('input[name="process-type"]');
+        let label1 = document.querySelector('div.browse-label');
+        let label2 = document.querySelector('div.output-label');
+
+        function mnageSourceImage(){
+            let sourceImg = document.querySelector('input[name=source-image]');
+            let emptyBox = document.querySelector('div.empty-image-box');
+            let displaySrcImage = document.querySelector('img#display-source-image');
+
+            sourceImg.addEventListener('change',(event) => {
+                let image = event.target.files[0];
+				
+                var reader  = new FileReader();
+
+                reader.onloadend = function () {
+					
+					displaySrcImage.src = reader.result;
+                }
+
+                if (image) {
+                    reader.readAsDataURL(image);
+                    
+                    displaySrcImage.style.display = "block";
+
+                    
+
+                }else{
+                    displaySrcImage.style.display = "none";
+                }
+
+                displayOpImg.style.display = "none";
+                loader.style.display = "none";
+                emptyOpBox.style.display = "block";
+                label2.textContent = "Output Image will display here";
+                label2.style.color = "rgb(96, 96, 100)";
+
+            });
+        }
+
+        function manageImgProcessing(){
+            
+
+            btn.addEventListener('click', async (e)=>{
+                if(form.querySelector('input[name=source-image]').value != ""){
+                    btn.disabled = true;
+                    displayOpImg.style.display = "none";
+                    loader.style.display = "block";
+                    emptyOpBox.style.display = "none";
+                    
+                    let formData = new FormData(form);
+
+                    try {
+
+                        const response = await fetch("{% url 'home' %}",{
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+                            }
+                            
+                        })
+    
+                        if (response.ok) {
+                            
+                            const result = await response.json();
+                            if(result.success){
+                                setTimeout(() =>{
+                                    btn.disabled = false;
+                                    displayOpImg.src = result.output;
+                                    displayOpImg.style.display = "block";
+                                    loader.style.display = "none";
+                                    emptyOpBox.style.display = "none";
+                                },4000);
+                            }else{
+                                setTimeout(() =>{
+                                    btn.disabled = false;
+                                    displayOpImg.style.display = "none";
+                                    loader.style.display = "none";
+                                    emptyOpBox.style.display = "block";
+    
+                                    label2.textContent = result.error;
+                                    label2.style.color = "red";
+                                    
+                                    setTimeout(() => {
+                                        label2.textContent = "Output Image will display here";
+                                        label2.style.color = "rgb(96, 96, 100)";
+                                    },5000)
+                                },2000);
+                            }
+
+                        } else {
+                            setTimeout(() =>{
+                                btn.disabled = false;
+                                displayOpImg.style.display = "none";
+                                loader.style.display = "none";
+                                emptyOpBox.style.display = "block";
+
+                                label2.textContent = "Sorry, Something went wrong. Please try again";
+                                label2.style.color = "red";
+                                
+                                setTimeout(() => {
+                                    label2.textContent = "Output Image will display here";
+                                    label2.style.color = "rgb(96, 96, 100)";
+                                },5000)
+                            },2000);
+                        }
+        
+                    }catch{
+                        setTimeout(() =>{
+                            btn.disabled = false;
+                            displayOpImg.style.display = "none";
+                            loader.style.display = "none";
+                            emptyOpBox.style.display = "block";
+
+                            label2.textContent = "Sorry, Something went wrong. Please try again";
+                            label2.style.color = "red";
+                            
+                            setTimeout(() => {
+                                label2.textContent = "Output Image will display here";
+                                label2.style.color = "rgb(96, 96, 100)";
+                            },5000)
+                        },2000);
+                    }
+                }else{
+                    btn.disabled = false;
+                    label1.textContent = "Please Insert an image";
+                    label1.style.color = "red";
+                    setTimeout(() => {
+                        label1.textContent = "Click to browse";
+                        label1.style.color = "black";
+                    },5000)
+                }
+            });
+        }
+
+        mnageSourceImage()
+        manageImgProcessing()
+
+        function manageImgProcessType(event){
+            let processType = event.dataset.process_type;
+            let processTypeInput = document.querySelector('input[name="process-type"]');
+            let activeBar = document.querySelectorAll('div.process-type-active-bar');
+
+            activeBar.forEach((bar)=>{
+                let parent = bar.parentNode;
+                if(parent.dataset.process_type == processType){
+                    bar.style.display = 'block';
+                }else{
+                    bar.style.display = 'none';
+                }
+            })
+
+            processTypeInput.value = processType;
+        }
+    </script>
+</body>
+
+</html>
