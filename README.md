@@ -8,10 +8,10 @@ This project provides a Python framework for medical image processing tasks. It 
 
 **Installation**
 
-1. **Clone the repository (if applicable):**
+1. **Clone the repository:**
 
 ```bash
-git clone https://your_repository_url.git
+git clone https://github.com/tanjim750/MedicalImgProcessing.git
 ```
 **How to run?**
 ```bash
