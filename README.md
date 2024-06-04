@@ -1,5 +1,3 @@
-## medicalImgProcessing
-
 **Introduction**
 
 This project provides a Python framework for medical image processing tasks. It offers a convenient way to work with various medical image formats and perform essential processing operations.
@@ -24,5 +22,6 @@ python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
 ```
-**Access the application: **
+**Access the application:**
+
 Open your web browser and navigate to http://127.0.0.1:8000/. You should now see the application's welcome page.
