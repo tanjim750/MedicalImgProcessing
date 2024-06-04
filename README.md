@@ -14,3 +14,15 @@ This project provides a Python framework for medical image processing tasks. It 
 
 ```bash
 git clone https://your_repository_url.git
+```
+**How to run?**
+```bash
+cd medicalImgProcessing
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
+**Access the application: **
+Open your web browser and navigate to http://127.0.0.1:8000/. You should now see the application's welcome page.
